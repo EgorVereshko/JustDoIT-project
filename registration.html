@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <section id="content" class="content flex">
+            <ul class="content__left list-reset">
+                <a href="#" class="logo">Logo</a>
+                <h1 class="content__left_title">Welcome back!</h1>
+            </ul>
+
+            <ul class="content__right registration-content__right list-reset">
+                <h1 class="content__right_title">Создать аккаунт</h1>
+                <div class="content__form">
+                    <div class="input">
+                        <span class="content__form_title">Имя</span>
+                        <input class="content__form_input" type="text" name="login" placeholder="Введите своё имя" required>
+                        <span class="content__form_title">E-mail или номер телефона</span>
+                        <input class="content__form_input" type="text" name="login" placeholder="Введите свой e-mail или номер телефона" required>
+                        <span class="content__form_title">Пароль</span>
+                        <input class="content__form_input" type="password" name="password" placeholder="Введите свой пароль" required>
+                    </div>
+                    <span class="registration-content__form_link">Должно быть не менее 8 символов</span>
+                    <button class="btn btn-reset">Зарегистрироваться</button>
+                    <a href="#" class="content__form_link create-account">создать аккаунт через</a>
+                    <div class="flex content__form_link-extra">
+                        <span href="#" class="existing-account">Уже есть аккаунт?</span>
+                        &nbsp;
+                        <a href="login.html" class="to-sign-up to-sign-in">Войти</a>
+                    </div>
+                </div>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

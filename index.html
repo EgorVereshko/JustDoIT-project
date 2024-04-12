@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container flex">
+            <a href="#" class="header__logo">Logo</a>
+            <div class="vertical-line"></div>
+            <nav class="header__nav">
+                <ul class="header__nav_list list-reset flex">
+                    <a href="#" class="header__nav_item">Главная</a>
+                    <a href="#" class="header__nav_item">Вопросы от проектантов</a>
+                    <a href="#" class="header__nav_item">Карточки наставников</a>
+                </ul>
+            </nav>
+            <a href="#" class="header__profile">
+                <img src="img/profile.svg" alt="Аватар профиля">
+            </a>
+        </div>
+    </header>
+    <hr class="header__line">
+    
+    <main class="main">
+        <section id="cards" class="cards">
+            <div class="container cards__container">
+                <h2 class="cards__title2">Смотри карточки наставников</h2>
+                <h1 class="cards__title1">находи нужного человека </h1>
+
+                <div class="cards__switch">
+                    <button class="cards__switch_left"><img src="img/line.svg" alt=""></button>
+                    <button class="cards__switch_right"><img src="img/line.svg" alt=""></button>
+                </div>
+
+                <ul class="cards__list list-reset flex">
+                    <li class="cards__item">
+                        <article class="cards__preview">
+                            <!-- <img src="" alt="Photo 1" class="cards__preview_image"> -->
+                            <div class="cards__preview_image">
+                                <img src="img/photo.png" alt="" class="cards__photo">
+                            </div>
+                            <div class="cards__preview_content flex">
+                                <div class="cards__preview_text">
+                                    <p class="cards__preview_name">Булаткин Егор</p>
+                                    <p class="cards__preview_descr">Студент 4 курса. Хорошо разбираюсь в frontend-разработке. Знаю JavaScript</p>
+                                </div>
+                                <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a>
+                            </div>
+                        </article>   
+                    </li>
+                    <li class="cards__item">
+                        <article class="cards__preview">
+                            <!-- <img src="" alt="Photo 2" class="cards__preview_image"> -->
+                            <div class="cards__preview_image">
+                                <img src="img/photo.png" alt="" class="cards__photo">
+                            </div>
+                            <div class="cards__preview_content flex">
+                                <div class="cards__preview_text">
+                                    <p class="cards__preview_name">Ляхов Григорий</p>
+                                    <p class="cards__preview_descr">Закончил УрФУ ИРИТ-РТФ. Работаю веб-дизайнером. Помогу с Figma, CoralDraw, Tilda</p>
+                                </div>
+                                <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a>
+                            </div>
+                        </article>   
+                    </li>
+                    <li class="cards__item">
+                        <article class="cards__preview">
+                            <!-- <img src="" alt="Photo 3" class="cards__preview_image"> -->
+                            <div class="cards__preview_image">
+                                <img src="img/photo.png" alt="" class="cards__photo">
+                            </div>
+                            <div class="cards__preview_content flex">
+                                <div class="cards__preview_text">
+                                    <p class="cards__preview_name">Никитин Артём</p>
+                                    <p class="cards__preview_descr">Студент 3 курса УрФУ ИРИТ-РТФ. Занимаюсь backend-разработкой. Знаю C#, C++, Python, PHP.</p>
+                                </div>
+                                <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a>
+                            </div>
+                        </article>   
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="directions" class="directions">
+            <div class="container directions__container">
+                <ul class="directions__list list-reset flex">
+                    <li class="directions__item">
+                        <a href="#"><img src="img/analitika.jpg" alt="" class="directions__item_icon"></a>
+                        <p class="directions__item_name">Аналитика</p>
+                    </li>
+                    <li class="directions__item">
+                        <a href="#"><img src="img/design.jpg" alt="" class="directions__item_icon"></a>
+                        <p class="directions__item_name">Дизайн</p>
+                    </li>
+                    <li class="directions__item">
+                        <a href="#"><img src="img/frontend.jpg" alt="" class="directions__item_icon"></a>
+                        <p class="directions__item_name">Frontend</p>
+                    </li>
+                    <li class="directions__item">
+                        <a href="#"><img src="img/backend.jpg" alt="" class="directions__item_icon"></a>
+                        <p class="directions__item_name">Backend</p>
+                    </li>
+                    <li class="directions__item">
+                        <a href="#"><img src="img/teamlead.jpg" alt="" class="directions__item_icon"></a>
+                        <p class="directions__item_name">Team-leader</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="questions" class="questions">
+            <div class="container questions__container">
+                <h2 class="questions__title2">Найди ответ или</h2>
+                <h1 class="questions__title1">задай свой вопрос</h1>
+
+                <ul class="questions__list list-reset flex">
+                    <li class="questions__item">
+                        <p class="questions__item_question">Что такое User case. Как правильно делать таблицу аналогов?</p>
+                        <div class="questions__item_author flex">
+                            <img src="" alt="Аватар">
+                            <div class="questions__item_author_info">
+                                <p class="questions__name">Смелянский Андрей</p>
+                                <p class="questions__direction">Аналитика</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <p class="questions__item_question">Как объеденить много объектов в один frame?</p>
+                        <div class="questions__item_author flex">
+                            <img src="" alt="Аватар">
+                            <div class="questions__item_author_info">
+                                <p class="questions__name">Дмитриев Даниил</p>
+                                <p class="questions__direction">Дизайн</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <p class="questions__item_question">Посоветуйте курс по основам языка программирования Go </p>
+                        <div class="questions__item_author flex">
+                            <img src="" alt="Аватар">
+                            <div class="questions__item_author_info">
+                                <p class="questions__name">Шабашов Иван</p>
+                                <p class="questions__direction">Backend</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+
+        </div>
+    </footer>
+</body>
+</html>
