@@ -47,13 +47,16 @@ body {
 /* login */
 .content__left {
     padding: 52px;
-    background-color: rgba(53, 57, 69, 1);
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 50%;
     height: 100vh;
 }
 
 .content__right {
-    padding: 145px 112px;
+    padding: 185px 161px 185px 137px;
     width: 50%;
 }
 
@@ -63,9 +66,25 @@ body {
 }
 
 .content__left_title {
-    padding-top: 150px;
-    text-align: center;
+    margin: 0;
+    padding-top: 135px;
+    text-align: left;
+    padding-left: 106px;
     color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.content__left_descr {
+    margin: 0;
+    margin-top: 35px;
+    margin-left: 106px;
+    width: 420px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .logo {
@@ -177,6 +196,12 @@ body {
     color: rgb(127, 75, 49);
 }
 
+.google-icon {
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
 .btn {
     margin: 30px 0;
     padding: 16px 0;
@@ -186,26 +211,26 @@ body {
     line-height: 16px;
     text-align: center;
     color: rgba(255, 255, 255, 1);
-    background-color: linear-gradient(90deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);;
+    background: linear-gradient(90deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);
     border-radius: 90px;
     transition: background-color 0.3s ease-in-out;
 }
 
 .btn:focus {
-    background-color: rgb(112, 106, 105);
+    background: linear-gradient(90deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);
 }
 
 .btn:hover {
-    background-color: rgb(112, 106, 105);
+    background: linear-gradient(90deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);
 }
 
 .btn:active {
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(90deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);
 }
 
 /* registration */
 .registration-content__right {
-    padding: 80px 112px;
+    padding: 123px 162px 105px 134px;
 }
 
 .registration-content__form_link {
@@ -413,12 +438,6 @@ body {
     margin-right: 44px;
 }
 
-.directions__item_icon {
-    padding: 15px;
-    outline: 2px solid rgba(0, 0, 0, 1);
-    border-radius: 50%;
-}
-
 .directions__item_name {
     margin: 0;
     margin-top: 20px;
@@ -426,7 +445,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(255, 117, 48, 1);
 }
 
 /* questions */
