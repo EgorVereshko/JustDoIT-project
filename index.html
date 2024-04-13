@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -31,6 +34,86 @@
     
     <main class="main">
         <section id="cards" class="cards">
+            <div class="container cards__container swiper">
+                <div class="cards__content">
+                    <h2 class="cards__title2">Смотри карточки наставников</h2>
+                    <h1 class="cards__title1">находи нужного человека </h1>
+
+                    <ul class="cards__list list-reset flex swiper-wrapper">
+                        <li class="cards__item swiper-slide">
+                            <article class="cards__preview">
+                                <!-- <img src="" alt="Photo 1" class="cards__preview_image"> -->
+                                <div class="cards__preview_image">
+                                    <img src="img/photo.png" alt="" class="cards__photo">
+                                </div>
+                                <div class="cards__preview_content flex">
+                                    <div class="cards__preview_text">
+                                        <p class="cards__preview_name">Булаткин Егор</p>
+                                        <p class="cards__preview_descr">Студент 4 курса. Хорошо разбираюсь в frontend-разработке. Знаю JavaScript</p>
+                                    </div>
+                                    <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a>
+                                </div>
+                            </article>   
+                        </li>
+                        <li class="cards__item swiper-slide">
+                            <article class="cards__preview">
+                                <!-- <img src="" alt="Photo 2" class="cards__preview_image"> -->
+                                <div class="cards__preview_image">
+                                    <img src="img/photo.png" alt="" class="cards__photo">
+                                </div>
+                                <div class="cards__preview_content flex">
+                                    <div class="cards__preview_text">
+                                        <p class="cards__preview_name">Ляхов Григорий</p>
+                                        <p class="cards__preview_descr">Закончил УрФУ ИРИТ-РТФ. Работаю веб-дизайнером. Помогу с Figma, CoralDraw, Tilda</p>
+                                    </div>
+                                    <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a>
+                                </div>
+                            </article>   
+                        </li>
+                        <li class="cards__item swiper-slide">
+                            <article class="cards__preview">
+                                <!-- <img src="" alt="Photo 3" class="cards__preview_image"> -->
+                                <div class="cards__preview_image">
+                                    <img src="img/photo.png" alt="" class="cards__photo">
+                                </div>
+                                <div class="cards__preview_content flex">
+                                    <div class="cards__preview_text">
+                                        <p class="cards__preview_name">Никитин Артём</p>
+                                        <p class="cards__preview_descr">Студент 3 курса УрФУ ИРИТ-РТФ. Занимаюсь backend-разработкой. Знаю C#, C++, Python, PHP.</p>
+                                    </div>
+                                    <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a>
+                                </div>
+                            </article>   
+                        </li>
+                        <li class="cards__item swiper-slide">
+                            <article class="cards__preview">
+                                <!-- <img src="" alt="Photo 3" class="cards__preview_image"> -->
+                                <div class="cards__preview_image">
+                                    <img src="img/photo.png" alt="" class="cards__photo">
+                                </div>
+                                <div class="cards__preview_content flex">
+                                    <div class="cards__preview_text">
+                                        <p class="cards__preview_name">Никитин Артём</p>
+                                        <p class="cards__preview_descr">Студент 3 курса УрФУ ИРИТ-РТФ. Занимаюсь backend-разработкой. Знаю C#, C++, Python, PHP.</p>
+                                    </div>
+                                    <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a>
+                                </div>
+                            </article>   
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        
+        <!-- <section id="cards" class="cards">
             <div class="container cards__container">
                 <h2 class="cards__title2">Смотри карточки наставников</h2>
                 <h1 class="cards__title1">находи нужного человека </h1>
@@ -43,7 +126,6 @@
                 <ul class="cards__list list-reset flex">
                     <li class="cards__item">
                         <article class="cards__preview">
-                            <!-- <img src="" alt="Photo 1" class="cards__preview_image"> -->
                             <div class="cards__preview_image">
                                 <img src="img/photo.png" alt="" class="cards__photo">
                             </div>
@@ -58,7 +140,6 @@
                     </li>
                     <li class="cards__item">
                         <article class="cards__preview">
-                            <!-- <img src="" alt="Photo 2" class="cards__preview_image"> -->
                             <div class="cards__preview_image">
                                 <img src="img/photo.png" alt="" class="cards__photo">
                             </div>
@@ -73,7 +154,6 @@
                     </li>
                     <li class="cards__item">
                         <article class="cards__preview">
-                            <!-- <img src="" alt="Photo 3" class="cards__preview_image"> -->
                             <div class="cards__preview_image">
                                 <img src="img/photo.png" alt="" class="cards__photo">
                             </div>
@@ -88,7 +168,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <section id="directions" class="directions">
             <div class="container directions__container">
@@ -143,15 +223,73 @@
         </section>
 
         <section id="questions" class="questions">
+            <div class="container questions__container swiper">
+                <div class="questions__content">
+                    <h2 class="questions__title2">Найди ответ или</h2>
+                    <h1 class="questions__title1">задай свой вопрос</h1>
+
+                    <ul class="questions__list list-reset flex swiper-wrapper">
+                        <li class="questions__item swiper-slide">
+                            <p class="questions__item_question">Что такое User case. Как правильно делать таблицу аналогов?</p>
+                            <div class="questions__item_author flex">
+                                <img src="img/photo.png" alt="Аватар">
+                                <div class="questions__item_author_info">
+                                    <p class="questions__name">Смелянский Андрей</p>
+                                    <p class="questions__direction">Аналитика</p>
+                                </div>
+                            </div>  
+                        </li>
+                        <li class="questions__item swiper-slide">
+                            <p class="questions__item_question">Как объеденить много объектов в один frame?</p>
+                            <div class="questions__item_author flex">
+                                <img src="img/photo.png" alt="Аватар">
+                                <div class="questions__item_author_info">
+                                    <p class="questions__name">Дмитриев Даниил</p>
+                                    <p class="questions__direction">Дизайн</p>
+                                </div>
+                            </div>  
+                        </li>
+                        <li class="questions__item swiper-slide">
+                            <p class="questions__item_question">Посоветуйте курс по основам языка программирования Go </p>
+                            <div class="questions__item_author flex">
+                                <img src="img/photo.png" alt="Аватар">
+                                <div class="questions__item_author_info">
+                                    <p class="questions__name">Шабашов Иван</p>
+                                    <p class="questions__direction">Backend</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="questions__item swiper-slide">
+                            <p class="questions__item_question">Посоветуйте курс по основам языка программирования Go </p>
+                            <div class="questions__item_author flex">
+                                <img src="img/photo.png" alt="Аватар">
+                                <div class="questions__item_author_info">
+                                    <p class="questions__name">Шабашов Иван</p>
+                                    <p class="questions__direction">Backend</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="swiper-questions-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="swiper-questions-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <div class="swiper-pagination-questions"></div>
+            </div>
+        </section>
+
+        <section id="questions" class="questions">
             <div class="container questions__container">
-                <h2 class="questions__title2">Найди ответ или</h2>
-                <h1 class="questions__title1">задай свой вопрос</h1>
 
                 <ul class="questions__list list-reset flex">
                     <li class="questions__item">
                         <p class="questions__item_question">Что такое User case. Как правильно делать таблицу аналогов?</p>
                         <div class="questions__item_author flex">
-                            <img src="" alt="Аватар">
+                            <img src="img/photo.png" alt="Аватар">
                             <div class="questions__item_author_info">
                                 <p class="questions__name">Смелянский Андрей</p>
                                 <p class="questions__direction">Аналитика</p>
@@ -161,7 +299,7 @@
                     <li class="questions__item">
                         <p class="questions__item_question">Как объеденить много объектов в один frame?</p>
                         <div class="questions__item_author flex">
-                            <img src="" alt="Аватар">
+                            <img src="img/photo.png" alt="Аватар">
                             <div class="questions__item_author_info">
                                 <p class="questions__name">Дмитриев Даниил</p>
                                 <p class="questions__direction">Дизайн</p>
@@ -171,7 +309,7 @@
                     <li class="questions__item">
                         <p class="questions__item_question">Посоветуйте курс по основам языка программирования Go </p>
                         <div class="questions__item_author flex">
-                            <img src="" alt="Аватар">
+                            <img src="img/photo.png" alt="Аватар">
                             <div class="questions__item_author_info">
                                 <p class="questions__name">Шабашов Иван</p>
                                 <p class="questions__direction">Backend</p>
@@ -183,10 +321,7 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__container">
-
-        </div>
-    </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
