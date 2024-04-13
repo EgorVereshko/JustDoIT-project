@@ -524,6 +524,84 @@ body {
     color: rgba(85, 85, 85, 1);
 }
 
+/* tutor_cards */
+.search {
+    margin-top: 80px;
+}
+
+.search__input {
+    padding: 16px 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(98, 98, 100, 1);
+    background-color: rgba(247, 247, 247, 1);
+    border-radius: 20px;
+    width: 500px;
+    border: none;
+}
+
+.filter {
+    margin-left: 68px;
+    padding: 14px 17px;
+    background-color: rgba(255, 150, 97, 1);
+    border-radius: 10px;
+}
+
+.tutor_cards {
+    margin-bottom: 100px;
+}
+
+.tutor_cards__list {
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.tutor_cards__item {
+    margin: 0;
+    margin-right: 32px;
+    outline: 1px solid rgba(255, 229, 134, 1);
+    border-radius: 20px;
+    width: 255px;
+    min-height: 383px;
+}
+
+.tutor_cards__item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.tutor_cards__preview_content {
+    margin: 0;
+    padding: 40px 10px;
+}
+
+.tutor_cards__preview_name {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(20, 20, 22, 1);
+}
+
+.tutor_cards__preview_descr {
+    margin: 0;
+    width: 249px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(20, 20, 22, 1);
+}
+
+.tutor_cards__preview_image {
+    height: 273px;
+    background-color: rgba(177, 181, 195, 1);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* slider */
 .swiper-button-prev::after,
 .swiper-button-next::after {
