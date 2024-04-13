@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container flex">
+            <a href="#" class="header__logo">Logo</a>
+            <div class="vertical-line"></div>
+            <nav class="header__nav">
+                <ul class="header__nav_list list-reset flex">
+                    <a href="/index.html" class="header__nav_item">Главная</a>
+                    <a href="#" class="header__nav_item">Вопросы от проектантов</a>
+                    <a href="/tutor_cards.html" class="header__nav_item">Карточки наставников</a>
+                </ul>
+            </nav>
+            <a href="#" class="header__profile">
+                <img src="img/profile.svg" alt="Аватар профиля">
+            </a>
+        </div>
+    </header>
+    <hr class="header__line">
+
+    <section id="search" class="search">
+        <div class="container search__container flex">
+            <form action="#" class="search__form">
+                <input type="text" name="" id="" placeholder="Поиск" class="search__input">
+            </form>
+
+            <img src="img/filter.svg" alt="" class="filter">
+        </div>
+    </section>
+    
+    <section id="tutor_cards" class="tutor_cards">
+        <div class="container tutor_cards__container">
+            <ul class="tutor_cards__list list-reset flex">
+                <li class="tutor_cards__item">
+                    <article class="tutor_cards__preview">
+                        <!-- <img src="" alt="Photo 1" class="cards__preview_image"> -->
+                        <div class="cards__preview_image">
+                            <img src="img/photo.png" alt="" class="cards__photo">
+                        </div>
+                        <div class="tutor_cards__preview_content flex">
+                            <div class="cards__preview_text">
+                                <p class="tutor_cards__preview_name">Степашин Платон</p>
+                                <p class="tutor_cards__preview_descr">Руководитель отдела разработки. По вопросам управления людьми пишите</p>
+                            </div>
+                            <!-- <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a> -->
+                        </div>
+                    </article>   
+                </li>
+                <li class="tutor_cards__item">
+                    <article class="tutor_cards__preview">
+                        <!-- <img src="" alt="Photo 2" class="cards__preview_image"> -->
+                        <div class="cards__preview_image">
+                            <img src="img/photo.png" alt="" class="cards__photo">
+                        </div>
+                        <div class="tutor_cards__preview_content flex">
+                            <div class="cards__preview_text">
+                                <p class="tutor_cards__preview_name">Дунаевский Степан</p>
+                                <p class="tutor_cards__preview_descr">Работаю бизнес-аналитиком. Учусь на 4 курсе</p>
+                            </div>
+                            <!-- <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a> -->
+                        </div>
+                    </article>   
+                </li>
+                <li class="tutor_cards__item">
+                    <article class="tutor_cards__preview">
+                        <!-- <img src="" alt="Photo 3" class="cards__preview_image"> -->
+                        <div class="cards__preview_image">
+                            <img src="img/photo.png" alt="" class="cards__photo">
+                        </div>
+                        <div class="tutor_cards__preview_content flex">
+                            <div class="cards__preview_text">
+                                <p class="tutor_cards__preview_name">Поляков Никита</p>
+                                <p class="tutor_cards__preview_descr">Работаю с базами данных</p>
+                            </div>
+                            <!-- <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a> -->
+                        </div>
+                    </article>   
+                </li>
+                <li class="tutor_cards__item">
+                    <article class="tutor_cards__preview">
+                        <!-- <img src="" alt="Photo 3" class="cards__preview_image"> -->
+                        <div class="cards__preview_image">
+                            <img src="img/photo.png" alt="" class="cards__photo">
+                        </div>
+                        <div class="tutor_cards__preview_content flex">
+                            <div class="cards__preview_text">
+                                <p class="tutor_cards__preview_name">Плаудис Роберт</p>
+                                <p class="tutor_cards__preview_descr">Опыт frontend-разработки 3 года</p>
+                            </div>
+                            <!-- <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a> -->
+                        </div>
+                    </article>   
+                </li>
+                <li class="tutor_cards__item">
+                    <article class="tutor_cards__preview">
+                        <!-- <img src="" alt="Photo 3" class="cards__preview_image"> -->
+                        <div class="cards__preview_image">
+                            <img src="img/photo.png" alt="" class="cards__photo">
+                        </div>
+                        <div class="tutor_cards__preview_content flex">
+                            <div class="cards__preview_text">
+                                <p class="tutor_cards__preview_name">Инсаров Фёдор</p>
+                                <p class="tutor_cards__preview_descr">Рисую лендинги, многостраничные сайты, макеты интернет-магазинов и веб-приложений</p>
+                            </div>
+                            <!-- <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a> -->
+                        </div>
+                    </article>   
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
