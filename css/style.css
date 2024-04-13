@@ -252,7 +252,7 @@ body {
     margin-left: 32px;
     width: 1px;
     height: 40px;
-    background-color: rgba(230, 232, 236, 1);
+    background-color: rgba(255, 229, 134, 1);
     display: inline-block;
 }
 
@@ -300,7 +300,7 @@ body {
 .header__line {
     margin: 0 auto;
     width: 1120px;
-    border: 1px solid rgba(230, 232, 236, 1);
+    border: 1px solid rgba(255, 229, 134, 1);
 }
 
 /* main */
@@ -333,7 +333,7 @@ body {
 
 .cards__item {
     margin: 0;
-    outline: 1px solid rgba(177, 181, 195, 1);
+    outline: 1px solid rgba(255, 229, 134, 1);
     border-radius: 20px;
     width: 352px;
 }
@@ -483,6 +483,7 @@ body {
     height: 345px;
     background-color: rgba(244, 245, 246, 1);
     border-radius: 20px;
+    outline: 2px solid rgba(254, 200, 0, 1);
 }
 
 .questions__item:not(:last-child) {
