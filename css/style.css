@@ -548,10 +548,6 @@ body {
     border-radius: 10px;
 }
 
-.tutor_cards {
-    margin-bottom: 100px;
-}
-
 .tutor_cards__list {
     margin-top: 50px;
     flex-wrap: wrap;
@@ -570,6 +566,10 @@ body {
     margin-right: 0;
 }
 
+.tutor_cards__item:nth-child(-n+8) {
+    margin-bottom: 80px;
+}
+
 .tutor_cards__preview_content {
     margin: 0;
     padding: 40px 10px;
@@ -577,7 +577,7 @@ body {
 
 .tutor_cards__preview_name {
     margin: 0;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -586,7 +586,7 @@ body {
 
 .tutor_cards__preview_descr {
     margin: 0;
-    width: 249px;
+    width: 219px;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
@@ -594,12 +594,20 @@ body {
 }
 
 .tutor_cards__preview_image {
-    height: 273px;
+    height: 188px;
     background-color: rgba(177, 181, 195, 1);
     border-radius: 20px 20px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.tutor_cards__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 130px;
+    width: 322px;
 }
 
 /* slider */
