@@ -533,7 +533,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: rgba(98, 98, 100, 1);
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(243, 242, 242);
     border-radius: 15px;
     width: 500px;
     border: none;
@@ -556,11 +556,150 @@ body {
     }
 }
 
+/* Неотмеченное состояние */
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #ccc;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Отмеченное состояние */
+  input[type="checkbox"]:checked {
+    background-color: rgba(255, 229, 134, 1);
+    border-color: rgba(255, 229, 134, 1);
+  }
+
 .filter {
     margin-left: 68px;
     padding: 14px 17px;
     background-color: rgba(255, 150, 97, 1);
     border-radius: 10px;
+    border: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+    margin: auto 0;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.close:hover,
+.close.focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup__header {
+    margin: 0;
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 212, 55, 1);
+}
+
+.popup__footer {
+    padding: 2px 16px;
+    background-color: #5c82b8;
+    color: white;
+}
+
+.popup__content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 14px 25px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 263px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.popup__line {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid rgba(217, 218, 219, 1);
+}
+
+.popup__btn {
+    margin: 30px auto;
+    padding: 5px 7px;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    width: 140px;
+}
+
+.popup__list {
+    margin-top: 25px;
+}
+
+.popup__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.popup__item:last-child {
+    margin-bottom: 30px;
+}
+
+.filter__name {
+    margin: 0;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(75, 81, 87, 1);
+}
+
+.filter__count {
+    margin: 0;
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(147, 150, 153, 1);
+}
+
+.popup__text {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(147, 150, 153, 1);
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 .tutor_cards__list {
