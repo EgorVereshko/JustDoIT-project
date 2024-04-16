@@ -258,9 +258,6 @@ body {
 
 .header__logo {
     padding: 16px 24px;
-    color: #000;
-    background-color: rgba(230, 232, 236, 1);
-    border-radius: 90px;
 }
 
 .header__nav {
@@ -530,15 +527,33 @@ body {
 }
 
 .search__input {
-    padding: 16px 14px;
+    padding: 12px 14px;
+    padding-left: 48px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: rgba(98, 98, 100, 1);
-    background-color: rgba(247, 247, 247, 1);
-    border-radius: 20px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 15px;
     width: 500px;
     border: none;
+}
+
+.search__form {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: auto;
+      left: 16px;
+      margin: auto 0;
+      width: 20px;
+      height: 20px;
+      background: url('https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png') no-repeat;
+      background-size: cover;
+    }
 }
 
 .filter {
@@ -573,11 +588,13 @@ body {
 .tutor_cards__preview_content {
     margin: 0;
     padding: 40px 10px;
+    padding-top: 23px;
 }
 
 .tutor_cards__preview_name {
     margin: 0;
     margin-bottom: 20px;
+    padding-top: 17px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -608,6 +625,15 @@ body {
     margin-top: 100px;
     margin-bottom: 130px;
     width: 322px;
+}
+
+.message-text__btn {
+    margin: auto 0 auto auto;
+    width: 46px;
+    height: 46px;
+    padding: 12px 11px 11px 12px;
+    background-color: rgba(255, 150, 97, 1);
+    border-radius: 50%;
 }
 
 /* slider */
