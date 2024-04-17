@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JustDoIT</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" crossorigin="">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link type="Image/x-icon" href="img/icon.ico" rel="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -16,13 +17,13 @@
 <body>
     <header class="header">
         <div class="container header__container flex">
-            <a href="#" class="header__logo">Logo</a>
+            <a href="index.html"><img src="img/icon.svg" alt="" class="icon"></a>
             <div class="vertical-line"></div>
             <nav class="header__nav">
                 <ul class="header__nav_list list-reset flex">
-                    <a href="#" class="header__nav_item">Главная</a>
+                    <a href="index.html" class="header__nav_item">Главная</a>
                     <a href="#" class="header__nav_item">Вопросы от проектантов</a>
-                    <a href="#" class="header__nav_item">Карточки наставников</a>
+                    <a href="tutor_cards.html" class="header__nav_item">Карточки наставников</a>
                 </ul>
             </nav>
             <a href="#" class="header__profile">
@@ -50,7 +51,7 @@
                                     <div class="cards__preview_text">
                                         <p class="cards__preview_name">Булаткин Егор</p>
                                         <p class="cards__preview_descr">Студент 4 курса. Хорошо разбираюсь в frontend-разработке. Знаю JavaScript</p>
-                                    </div>
+                                    </div>                                  
                                     <a href="#" class="cards__btn"><img src="img/message.svg" alt=""></a>
                                 </div>
                             </article>   
@@ -175,7 +176,7 @@
                 <ul class="directions__list list-reset flex">
                     <li class="directions__item">
                         <a href="#">
-                            <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="direction__item_icon" width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="49" cy="49" r="48" stroke="#FF9661" stroke-width="2"/>
                                 <path d="M45.7083 57.875H62.4583V63.4583H45.7083V57.875ZM40.125 35.5417H34.5417V41.125H40.125V35.5417ZM45.7083 52.2917H62.4583V46.7083H45.7083V52.2917ZM45.7083 41.125H62.4583V35.5417H45.7083V41.125ZM40.125 46.7083H34.5417V52.2917H40.125V46.7083ZM73.625 29.9583V69.0417C73.625 72.1125 71.1125 74.625 68.0417 74.625H28.9583C25.8875 74.625 23.375 72.1125 23.375 69.0417V29.9583C23.375 26.8875 25.8875 24.375 28.9583 24.375H68.0417C71.1125 24.375 73.625 26.8875 73.625 29.9583ZM68.0417 29.9583H28.9583V69.0417H68.0417V29.9583ZM40.125 57.875H34.5417V63.4583H40.125V57.875Z" fill="#FF9661"/>
                             </svg>
@@ -279,44 +280,6 @@
                     <i class="ri-arrow-right-s-line"></i>
                 </div>
                 <div class="swiper-pagination-questions"></div>
-            </div>
-        </section>
-
-        <section id="questions" class="questions">
-            <div class="container questions__container">
-
-                <ul class="questions__list list-reset flex">
-                    <li class="questions__item">
-                        <p class="questions__item_question">Что такое User case. Как правильно делать таблицу аналогов?</p>
-                        <div class="questions__item_author flex">
-                            <img src="img/photo.png" alt="Аватар">
-                            <div class="questions__item_author_info">
-                                <p class="questions__name">Смелянский Андрей</p>
-                                <p class="questions__direction">Аналитика</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="questions__item">
-                        <p class="questions__item_question">Как объеденить много объектов в один frame?</p>
-                        <div class="questions__item_author flex">
-                            <img src="img/photo.png" alt="Аватар">
-                            <div class="questions__item_author_info">
-                                <p class="questions__name">Дмитриев Даниил</p>
-                                <p class="questions__direction">Дизайн</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="questions__item">
-                        <p class="questions__item_question">Посоветуйте курс по основам языка программирования Go </p>
-                        <div class="questions__item_author flex">
-                            <img src="img/photo.png" alt="Аватар">
-                            <div class="questions__item_author_info">
-                                <p class="questions__name">Шабашов Иван</p>
-                                <p class="questions__direction">Backend</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </section>
     </main>

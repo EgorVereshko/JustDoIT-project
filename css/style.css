@@ -128,8 +128,38 @@ body {
     width: 100%;
 }
 
+.content__form_input:focus {
+    outline: 2px solid rgba(255, 150, 97, 1);
+}
+
+.content__form_input:active {
+    outline: 2px solid rgba(255, 150, 97, 1);
+}
+
 .content__form_input:last-child {
     margin-bottom: 8px;
+}
+
+.content__form_select {
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: rgba(122, 130, 138, 1);
+    background-color: rgba(237, 242, 247, 1);
+    border-radius: 6px;
+}
+
+.content__form_select:focus {
+    outline: 2px solid rgba(255, 150, 97, 1);
+    border: none;
+}
+
+.content__form_select:active {
+    outline: 2px solid rgba(255, 150, 97, 1);
+    border: none;
 }
 
 .content__form_link {
@@ -200,6 +230,22 @@ body {
     display: block;
     margin: 0 auto;
     margin-top: 24px;
+    fill: #FF9661;
+    transition: fill 0.3s ease-in-out;
+}
+
+.google-icon:focus{
+    fill: #ee631d;
+    outline-offset: 5px;
+}
+
+.google-icon:hover {
+    fill: #e87841;
+}
+
+.google-icon:active {
+    fill: #ee631d;
+    outline: none;
 }
 
 .btn {
@@ -213,24 +259,24 @@ body {
     color: rgba(255, 255, 255, 1);
     background: linear-gradient(90deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);
     border-radius: 90px;
-    transition: background-color 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 .btn:focus {
-    background: linear-gradient(90deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);
+    background: linear-gradient(270deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);
 }
 
 .btn:hover {
-    background: linear-gradient(90deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);
+    background: linear-gradient(270deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);
 }
 
 .btn:active {
-    background: linear-gradient(90deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);
+    background: linear-gradient(270deg, #FFE586 0%, #FF9661 49.6%, #FF7163 80.1%, #FFC7C6 100%);
 }
 
 /* registration */
 .registration-content__right {
-    padding: 123px 162px 105px 134px;
+    padding: 100px 162px 0 134px;
 }
 
 .registration-content__form_link {
@@ -256,8 +302,10 @@ body {
     display: inline-block;
 }
 
-.header__logo {
-    padding: 16px 24px;
+.icon {
+    padding: 4px 13px;
+    background-color: #fff;
+    border-radius: 90px;
 }
 
 .header__nav {
@@ -490,6 +538,7 @@ body {
 
 .questions__item_question {
     margin: 0;
+    padding: 30px 25px 0 25px;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -497,6 +546,8 @@ body {
 }
 
 .questions__item_author {
+    padding: 0 25px;
+    padding-bottom: 30px;
     width: 304px;
     height: 60px;
 }
@@ -556,22 +607,18 @@ body {
     }
 }
 
-/* Неотмеченное состояние */
 input[type="checkbox"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     border: 2px solid #ccc;
     width: 20px;
     height: 20px;
     border-radius: 5px;
-  }
+}
   
-  /* Отмеченное состояние */
-  input[type="checkbox"]:checked {
+input[type="checkbox"]:checked {
     background-color: rgba(255, 229, 134, 1);
     border-color: rgba(255, 229, 134, 1);
-  }
+}
 
 .filter {
     margin-left: 68px;
@@ -579,6 +626,20 @@ input[type="checkbox"] {
     background-color: rgba(255, 150, 97, 1);
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.filter:hover {
+    background-color: rgb(252, 105, 32);
+}
+
+.filter:focus {
+    background-color: rgb(252, 105, 32);
+}
+
+.filter:active {
+    background-color: rgb(189, 76, 20);
 }
 
 .popup {
@@ -599,11 +660,12 @@ input[type="checkbox"] {
     font-size: 28px;
     font-weight: bold;
     margin-left: auto;
+    transition: color 0.3s ease-in-out;
 }
 
 .close:hover,
 .close.focus {
-    color: black;
+    color: rgb(252, 105, 32);
     text-decoration: none;
     cursor: pointer;
 }
@@ -627,6 +689,7 @@ input[type="checkbox"] {
     position: relative;
     background-color: #fefefe;
     margin: auto;
+    margin-left: 850px;
     padding: 14px 25px;
     border: 1px solid #888;
     border-radius: 5px;
@@ -767,6 +830,7 @@ input[type="checkbox"] {
 }
 
 .message-text__btn {
+    display: none;
     margin: auto 0 auto auto;
     width: 46px;
     height: 46px;
