@@ -973,6 +973,18 @@ input[type="checkbox"]:checked {
     width: 256px;
 }
 
+.user__area {
+    margin-top: 48px;
+}
+
+.user_item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.user_item:last-child {
+    margin-bottom: 48px;
+}
+
 /* slider */
 .swiper-button-prev::after,
 .swiper-button-next::after {
