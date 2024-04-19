@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustDoIT</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link type="Image/x-icon" href="img/icon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container flex">
+            <a href="index.html"><img src="img/icon.svg" alt="" class="icon"></a>
+            <div class="vertical-line"></div>
+            <nav class="header__nav">
+                <ul class="header__nav_list list-reset flex">
+                    <a href="index.html" class="header__nav_item">Главная</a>
+                    <a href="#" class="header__nav_item">Вопросы от проектантов</a>
+                    <a href="tutor_cards.html" class="header__nav_item">Карточки наставников</a>
+                </ul>
+            </nav>
+            <a href="#" class="header__profile">
+                <img src="img/profile.svg" alt="Аватар профиля">
+            </a>
+        </div>
+    </header>
+    <hr class="header__line">
+    
+    <main class="user">
+        <div class="container user__container">
+            <div class="user__content flex">
+                <!-- <img src="img/photo.png" alt="Аватар пользователя" class="user__image"> -->
+                <div class="user__avatar">
+                    <img src="img/user.png" alt="" class="user__image">
+                </div>
+                <div class="user__input">
+                    <div class="user__input_top flex">
+                        <h1 class="user__name">Дмитриев Данил</h1>
+                        <a href="#" class="message-text__btn"><img src="img/message-text.svg" alt=""></a>
+                    </div>
+                    <div class="user__form">
+                        <p class="user__form_text">Информация</p>
+                        <span class="user__form_title">Расскажи о себе</span>
+                        <input class="user__form_input" type="text" name="login" placeholder="Опиши свои умения" required>
+                        <div class="flex">
+                            <div class="user__form_input_left">
+                                <span class="user__form_title">Телефон</span>
+                                <input class="user__form_input" type="text" name="login" placeholder="Номер телефона" required>
+                            </div>
+                            <div class="user__form_input_right">
+                                <span class="user__form_title">email</span>
+                                <input class="user__form_input" type="text" name="login" placeholder="Введите свой e-mail" required>
+                            </div>
+                            
+                        </div>
+                        <span class="user__form_title">Род  деятельности</span>
+                        <select class="user__form_select">
+                            <option class="user__form_option">Аналитика</option>
+                            <option class="user__form_option">Дизайн</option>
+                            <option class="user__form_option">Frontend</option>
+                            <option class="user__form_option">Backend</option>
+                            <option class="user__form_option">Team-leader</option>
+                        </select>
+                    </div>
+                    <p class="user__input_timetable">Моё расписание</p>
+                    <button class="btn btn-reset user__btn">Редактировать профиль</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
