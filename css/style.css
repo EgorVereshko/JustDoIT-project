@@ -248,6 +248,15 @@ body {
     outline: none;
 }
 
+.content__form-checkbox {
+    margin-top: 7px;
+}
+
+.content__form-checkbox_input {
+    margin: auto 0;
+    margin-left: 10px;
+}
+
 .btn {
     margin: 30px 0;
     padding: 16px 0;
@@ -280,6 +289,7 @@ body {
 }
 
 .registration-content__form_link {
+    margin: 0;
     display: block;
     text-align: left;
     font-weight: 400;
@@ -344,7 +354,7 @@ body {
 
 .header__line {
     margin: 0 auto;
-    width: 1120px;
+    width: 99%;
     border: 1px solid rgba(255, 229, 134, 1);
 }
 
@@ -534,6 +544,8 @@ body {
 }
 
 .questions__item {
+    display: flex;
+    flex-direction: column;
     /* padding: 30px 25px; */
     width: 354px;
     min-height: 345px;
@@ -561,6 +573,7 @@ body {
 }
 
 .questions__item_author {
+    margin-top: auto;
     padding: 0 25px;
     padding-bottom: 30px;
     width: 304px;
@@ -859,26 +872,16 @@ input[type="checkbox"]:checked {
     margin-top: 80px;
 }
 
-.user__avatar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 255px;
-    height: 188px;
-    background-color: rgba(177, 181, 195, 1);
+.user__image {
+    max-width: 255px;
+    max-height: 188px;
     outline: 2px solid rgba(255, 150, 97, 1);
     border-radius: 20px 20px 0 0;
 }
 
-.user__image {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
 .user__input {
     margin-left: 128px;
-    width: 80%;
+    width: 100%;
 }
 
 .user__form {
@@ -981,9 +984,9 @@ input[type="checkbox"]:checked {
     margin-bottom: 15px;
 }
 
-.user_item:last-child {
+/* .user_item:last-child {
     margin-bottom: 48px;
-}
+} */
 
 /* slider */
 .swiper-button-prev::after,
@@ -1015,12 +1018,12 @@ input[type="checkbox"]:checked {
 }
 
 .swiper-pagination-bullet {
-    background-color: rgba(255, 229, 134, 1);
+    background-color: rgba(225, 229, 238, 1);
     opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: rgb(245, 212, 91);
+    background-color: rgba(20, 20, 22, 1);
 }
 
 .swiper-questions-button-prev::after,
