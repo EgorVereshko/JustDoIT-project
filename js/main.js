@@ -49,3 +49,35 @@ let swiperQuestions = new Swiper('.questions__content', {
         },
     },
 });
+
+let popup = document.getElementById('popup'),
+popupToggle = document.getElementById('myBtn'),
+popupClose = document.querySelector('.close');
+
+popupToggle.onclick = function() {
+    popup.style.display = "block"
+};
+
+popupClose.onclick = function() {
+    popup.style.display = "none"
+};
+
+window.onclick = function(e) {
+    if (e.target == popup) {
+        popup.style.display = "none";
+    }
+}
+
+const myBtn = document.getElementById('myBtn');
+let scrollDisabled = false;
+
+myBtn.addEventListener('click', () => {
+    if (!scrollDisabled) {
+        document.body.style.overflow = 'hidden';
+        scrollDisabled = true;
+    }
+    else {
+        document.body.style.overflow = 'auto';
+        scrollDisabled = false;
+    }
+});
