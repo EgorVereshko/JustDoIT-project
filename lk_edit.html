@@ -36,69 +36,79 @@
     <main class="user">
         <div class="container user__container">
             <div class="user__content flex">
-                <!-- <img src="img/photo.png" alt="Аватар пользователя" class="user__image"> -->
                 <div class="user__avatar">
                     <img src="img/lkava.jpg" alt="" class="user__image">
                 </div>
-                <div class="user__input">
+                <form id="inputForm" action="lk.html" class="user__input">
+                    <span for="textInput" class="user__form_title">Имя</span>
                     <div class="user__input_top flex">
-                        <h1 class="user__name">Дмитриев Данил</h1>
+                        <input type="text" id="nameInput" name="nameInput" class="user__form_input" placeholder="Введи своё имя" required>
                         <a href="#" class="message-text__btn"><img src="img/message-text.svg" alt=""></a>
                     </div>
                     <div class="user__form">
                         <p class="user__form_text">Информация</p>
-                        <span class="user__form_title">Расскажи о себе</span>
-                        <input class="user__form_input" type="text" name="login" placeholder="Опиши свои умения" required>
+                        <span for="textInput" class="user__form_title">Расскажи о себе</span>
+                        <input type="text" id="textInput" name="textInput" class="user__form_input" placeholder="Опиши свои умения" required>
                         <div class="flex">
                             <div class="user__form_input_left">
-                                <span class="user__form_title">Телефон</span>
-                                <input class="user__form_input" type="text" name="login" placeholder="Номер телефона" required>
+                                <span for="phoneInput" class="user__form_title">Телефон</span>
+                                <input type="tel" id="phoneInput" name="phoneInput" class="user__form_input" placeholder="Номер телефона" required>
                             </div>
                             <div class="user__form_input_right">
-                                <span class="user__form_title">email</span>
-                                <input class="user__form_input" type="text" name="login" placeholder="Введите свой e-mail" required>
+                                <span for="emailInput" class="user__form_title">email</span>
+                                <input type="email" id="emailInput" name="emailInput" class="user__form_input" placeholder="Введите свой e-mail" required>
                             </div>
                             
                         </div>
                         <span class="user__form_title">Род  деятельности</span>
-                        <select class="user__form_select">
-                            <option class="user__form_option">Аналитика</option>
-                            <option class="user__form_option">Дизайн</option>
-                            <option class="user__form_option">Frontend</option>
-                            <option class="user__form_option">Backend</option>
-                            <option class="user__form_option">Team-leader</option>
-                        </select>
                         <ul class="user__area list-reset">
                             <li class="user_item flex">
-                                <input id="html" type="checkbox" class="filter__checkbox">
+                                <input id="html" type="checkbox" class="filter__checkbox myCheckbox" value="Аналитика">
                                 <p class="filter__name">Аналитика</p>
                             </li>
                             <li class="user_item flex">
-                                <input id="html" type="checkbox" class="filter__checkbox">
+                                <input id="html" type="checkbox" class="filter__checkbox myCheckbox" value="Дизайн">
                                 <p class="filter__name">Дизайн</p>
                             </li>
                             <li class="user_item flex">
-                                <input id="html" type="checkbox" class="filter__checkbox">
+                                <input id="html" type="checkbox" class="filter__checkbox myCheckbox" value="Frontend">
                                 <p class="filter__name">Frontend</p>
                             </li>
                             <li class="user_item flex">
-                                <input id="html" type="checkbox" class="filter__checkbox">
+                                <input id="html" type="checkbox" class="filter__checkbox myCheckbox" value="Backend">
                                 <p class="filter__name">Backend</p>
                             </li>
                             <li class="user_item flex">
-                                <input id="html" type="checkbox" class="filter__checkbox">
+                                <input id="html" type="checkbox" class="filter__checkbox myCheckbox" value="Team-leader">
                                 <p class="filter__name">Team-leader</p>
                             </li>
                         </ul>
                     </div>
                     <!-- <p class="user__input_timetable">Моё расписание</p> -->
-                    <button onclick="window.location.href='lk.html'" class="btn btn-reset user__btn">Сохранить изменения</button>
-                </div>
+                    <button onclick="sendCheckboxes()" type="submit" value="Submit" class="btn btn-reset user__btn">Сохранить изменения</button>
+                </form>
             </div>
         </div>
     </main>
 
+    <script>
+        function sendCheckboxes() {
+            let checkedCheckboxes = [];
+            document.querySelectorAll('.myCheckbox').forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    checkedCheckboxes.push(checkbox.value);
+                }
+            });
+    
+            if (checkedCheckboxes.length > 0) {
+                window.location.href = 'lk.html?checkboxValues=' + checkedCheckboxes.join(',');
+            } else {
+                alert('Пожалуйста, выберите род деятельности');
+            }
+        }
+    </script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

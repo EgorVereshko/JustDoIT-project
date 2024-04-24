@@ -42,33 +42,27 @@
                 </div>
                 <div class="user__input">
                     <div class="user__input_top flex">
-                        <h1 class="user__name">Дмитриев Данил</h1>
+                        <h1 id="submittedName" class="user__name"></h1>
                         <a href="#" class="message-text__btn"><img src="img/message-text.svg" alt=""></a>
                     </div>
                     <div class="user__form">
                         <p class="user__form_text">Информация</p>
                         <span class="user__form_title">Расскажи о себе</span>
-                        <input class="user__form_input" type="text" name="login" placeholder="Опиши свои умения" required>
+                        <p id="submittedText" class="user__form_data"></p>
                         <div class="flex">
                             <div class="user__form_input_left">
                                 <span class="user__form_title">Телефон</span>
-                                <input class="user__form_input" type="text" name="login" placeholder="Номер телефона" required>
+                                <p id="submittedPhone" class="user__form_data"></p>
                             </div>
                             <div class="user__form_input_right">
                                 <span class="user__form_title">email</span>
-                                <input class="user__form_input" type="text" name="login" placeholder="Введите свой e-mail" required>
+                                <p id="submittedEmail" class="user__form_data"></p>
                             </div>
                             
                         </div>
                         <span class="user__form_title">Род  деятельности</span>
-                        <select class="user__form_select">
-                            <option class="user__form_option">Аналитика</option>
-                            <option class="user__form_option">Дизайн</option>
-                            <option class="user__form_option">Frontend</option>
-                            <option class="user__form_option">Backend</option>
-                            <option class="user__form_option">Team-leader</option>
-                        </select>
                     </div>
+                    <div id="checkboxValues"></div>
                     <!-- <p class="user__input_timetable">Моё расписание</p> -->
                     <button onclick="window.location.href='lk_edit.html'" class="btn btn-reset user__btn">Редактировать профиль</button>
                 </div>
@@ -76,7 +70,20 @@
         </div>
     </main>
 
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const checkboxesParam = urlParams.get('checkboxValues');
+        const checkboxesArray = checkboxesParam.split(',');
+    
+        const checkboxValuesDiv = document.getElementById('checkboxValues');
+        checkboxValuesDiv.innerHTML = "<ul>";
+        checkboxesArray.forEach(function(value) {
+            checkboxValuesDiv.innerHTML += "<li>" + value + "</li>";
+        });
+        checkboxValuesDiv.innerHTML += "</ul>";
+    </script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/submit.js"></script>
 </body>
 </html>
