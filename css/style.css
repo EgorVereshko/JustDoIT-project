@@ -885,7 +885,7 @@ input[type="checkbox"]:checked {
 }
 
 .user__form {
-    margin-top: 64px;
+    margin-top: 32px;
 }
 
 .user__form_text {
@@ -895,6 +895,11 @@ input[type="checkbox"]:checked {
     font-size: 16px;
     line-height: 24px;
     color: rgba(35, 38, 47, 1);
+}
+
+.user__form_data {
+    margin: 0;
+    margin-bottom: 32px;
 }
 
 .user__name {
@@ -977,7 +982,7 @@ input[type="checkbox"]:checked {
 }
 
 .user__area {
-    margin-top: 48px;
+    margin-top: 25px;
 }
 
 .user_item:not(:last-child) {
