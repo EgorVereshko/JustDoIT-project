@@ -352,6 +352,15 @@ body {
     margin-left: auto;
 }
 
+.profile-avatar {
+    fill: #FFE586;
+    transition: fill 0.2s ease-in-out;
+}
+
+.profile-avatar:hover {
+    fill: #d1ac27;
+}
+
 .header__line {
     margin: 0 auto;
     width: 99%;
@@ -397,10 +406,15 @@ body {
     border-radius: 20px;
     width: 352px;
     min-height: 459px;
+    transition: outline 0.3s ease-in-out;
 }
 
 .cards__item:not(:last-child) {
     margin-right: 32px;
+}
+
+.cards__item:hover {
+    outline: 2px solid rgb(210, 165, 3);
 }
 
 .cards__preview_content {
@@ -499,6 +513,22 @@ body {
     margin-right: 44px;
 }
 
+.direction__item_icon, .gg {
+    transition: fill 0.3s ease-in-out;
+}
+
+.direction__item_icon:hover .gg {
+    fill: #fff;
+}
+
+.direction__item_icon:hover {
+    fill: #FF9661;
+}
+
+.gg {
+    fill: #FF9661;
+}
+
 .directions__item_name {
     margin: 0;
     margin-top: 20px;
@@ -560,7 +590,7 @@ body {
 }
 
 .questions__item:hover {
-    outline: 2px solid rgb(177, 143, 20);
+    outline: 2px solid rgb(210, 165, 3);
 }
 
 .questions__item_question {
@@ -614,6 +644,7 @@ body {
     color: rgba(98, 98, 100, 1);
     background-color: rgb(243, 242, 242);
     border-radius: 15px;
+    box-shadow: 5px 3px 5px #d7d6d6;
     width: 500px;
     border: none;
 }
@@ -653,6 +684,7 @@ input[type="checkbox"]:checked {
     padding: 14px 17px;
     background-color: rgba(255, 150, 97, 1);
     border-radius: 10px;
+    box-shadow: 3px 2px 5px rgb(235, 196, 177);;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
@@ -817,7 +849,7 @@ input[type="checkbox"]:checked {
 }
 
 .tutor_cards__item:hover {
-    outline: 2px solid rgb(240, 149, 21);
+    outline: 2px solid rgb(210, 165, 3);
 }
 
 .tutor_cards__preview_content {
