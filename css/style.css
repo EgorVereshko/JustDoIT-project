@@ -805,6 +805,7 @@ input[type="checkbox"]:checked {
     border-radius: 20px;
     width: 255px;
     min-height: 383px;
+    transition: outline 0.1s ease-in-out;
 }
 
 .tutor_cards__item:nth-child(4n) {
@@ -813,6 +814,10 @@ input[type="checkbox"]:checked {
 
 .tutor_cards__item:nth-child(-n+8) {
     margin-bottom: 80px;
+}
+
+.tutor_cards__item:hover {
+    outline: 2px solid rgb(240, 149, 21);
 }
 
 .tutor_cards__preview_content {
@@ -873,10 +878,24 @@ input[type="checkbox"]:checked {
 }
 
 .user__image {
-    max-width: 255px;
-    max-height: 188px;
+    width: 255px;
+    height: 188px;
     outline: 2px solid rgba(255, 150, 97, 1);
     border-radius: 20px 20px 0 0;
+}
+
+.user__avatar {
+    width: 40%;
+}
+
+.avatar-input {
+    margin-top: 20px;
+}
+
+.avatar-button {
+    margin-top: 10px;
+    padding: 13px 0;
+    width: 255px;
 }
 
 .user__input {
@@ -885,7 +904,7 @@ input[type="checkbox"]:checked {
 }
 
 .user__form {
-    margin-top: 32px;
+    margin-top: 20px;
 }
 
 .user__form_text {

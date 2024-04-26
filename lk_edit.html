@@ -37,7 +37,9 @@
         <div class="container user__container">
             <div class="user__content flex">
                 <div class="user__avatar">
-                    <img src="img/lkava.jpg" alt="" class="user__image">
+                    <img id="displayImg" class="user__image" alt="Аватар">
+                    <input type="file" id="fileInput" class="avatar-input">
+                    <button onclick="uploadPhoto()" class="btn btn-reset avatar-button">Загрузить фото</button>
                 </div>
                 <form id="inputForm" action="lk.html" class="user__input">
                     <span for="textInput" class="user__form_title">Имя</span>
@@ -92,20 +94,9 @@
     </main>
 
     <script>
-        function sendCheckboxes() {
-            let checkedCheckboxes = [];
-            document.querySelectorAll('.myCheckbox').forEach(function(checkbox) {
-                if (checkbox.checked) {
-                    checkedCheckboxes.push(checkbox.value);
-                }
-            });
-    
-            if (checkedCheckboxes.length > 0) {
-                window.location.href = 'lk.html?checkboxValues=' + checkedCheckboxes.join(',');
-            } else {
-                alert('Пожалуйста, выберите род деятельности');
-            }
-        }
+        const photoData = localStorage.getItem('photo');
+        const displayImg = document.getElementById('displayImg');
+        displayImg.src = photoData;
     </script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>

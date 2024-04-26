@@ -81,3 +81,29 @@ myBtn.addEventListener('click', () => {
         scrollDisabled = false;
     }
 });
+
+function sendCheckboxes() {
+    let checkedCheckboxes = [];
+    document.querySelectorAll('.myCheckbox').forEach(function(checkbox) {
+        if (checkbox.checked) {
+            checkedCheckboxes.push(checkbox.value);
+        }
+    });
+
+    if (checkedCheckboxes.length > 0) {
+        window.location.href = 'lk.html?checkboxValues=' + checkedCheckboxes.join(',');
+    } else {
+        alert('Пожалуйста, выберите род деятельности');
+    }
+}
+
+function uploadPhoto() {
+    const fileInput = document.getElementById('fileInput');
+    const file = fileInput.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+        localStorage.setItem('photo', e.target.result);
+    }
+    reader.readAsDataURL(file);
+}

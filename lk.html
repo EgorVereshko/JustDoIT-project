@@ -38,7 +38,7 @@
             <div class="user__content flex">
                 <!-- <img src="img/photo.png" alt="Аватар пользователя" class="user__image"> -->
                 <div class="user__avatar">
-                    <img src="img/lkava.jpg" alt="" class="user__image">
+                    <img id="displayImg" class="user__image" alt="Аватар">
                 </div>
                 <div class="user__input">
                     <div class="user__input_top flex">
@@ -81,6 +81,10 @@
             checkboxValuesDiv.innerHTML += "<li>" + value + "</li>";
         });
         checkboxValuesDiv.innerHTML += "</ul>";
+
+        const photoData = localStorage.getItem('photo');
+        const displayImg = document.getElementById('displayImg');
+        displayImg.src = photoData;
     </script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
