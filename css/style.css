@@ -957,7 +957,7 @@ input[type="checkbox"]:checked {
     overflow: hidden;
     backface-visibility: hidden;
     position: absolute;
-    transition: transform .6s linear;
+    transition: transform 0.6s linear;
 }
 
 .front{
