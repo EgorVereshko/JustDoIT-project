@@ -16,7 +16,7 @@
     <main class="main">
         <section id="content" class="content flex">
             <div class="content__left list-reset">
-                <a href="index.html"><img src="img/icon.svg" alt="" class="icon"></a>
+                <a href="index.html"><img src="img/icon.svg" class="icon" alt="Лого"></a>
                 <h1 class="content__left_title">JustDoIT!</h1>
                 <p class="content__left_descr">
                     веб-сервис, с помощью которого проектанты
@@ -38,14 +38,13 @@
                         <span class="content__form_title">Пароль</span>
                         <input class="content__form_input" type="password" name="password" placeholder="Введите свой пароль" required>
                         <span class="registration-content__form_link">Должно быть не менее 8 символов</span>
-                        <!-- <span class="content__form_title">Ваш статус</span>
-                        <select class="content__form_select">
-                            <option class="content__form_option">Проектант</option>
-                            <option class="content__form_option">Наставник</option>
-                        </select> -->
+                        <div class="content__form_checkbox flex">
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales" class="content__form_checkbox_input">Я наставник</label>
+                        </div>
                     </div>
                     <button class="btn btn-reset">Зарегистрироваться</button>
-                    <a href="#" class="content__form_link create-account">создать аккаунт через</a>
+                    <p class="content__form_link create-account">создать аккаунт через</p>
                     <a href="#">
                         <svg class="google-icon" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_dd_175_1893)">
@@ -78,7 +77,7 @@
                             </defs>
                         </svg>
                     </a>
-                    <div class="flex content__form_link-extra">
+                    <div class="content__form_link-extra flex">
                         <span href="#" class="existing-account">Уже есть аккаунт?</span>
                         &nbsp;
                         <a href="login.html" class="to-sign-up to-sign-in">Войти</a>

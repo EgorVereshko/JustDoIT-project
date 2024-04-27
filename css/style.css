@@ -126,18 +126,21 @@ body {
     border: none;
     border-radius: 6px;
     width: 100%;
+    transition: outline 0.3s ease-in-out;
+}
+
+.content__form_input:hover {
+    outline: 2px solid rgba(255, 222, 103, 1);
 }
 
 .content__form_input:focus {
-    outline: 2px solid rgba(255, 150, 97, 1);
+    outline: 2px solid rgba(254, 200, 0, 1);
+    box-shadow: 0 0 7px rgba(254, 200, 0, 1);
 }
 
 .content__form_input:active {
-    outline: 2px solid rgba(255, 150, 97, 1);
-}
-
-.content__form_input:last-child {
-    margin-bottom: 8px;
+    outline: 2px solid rgba(254, 200, 0, 1);
+    box-shadow: 0 0 7px rgba(254, 200, 0, 1);
 }
 
 .content__form_select {
@@ -163,25 +166,13 @@ body {
 }
 
 .content__form_link {
+    margin: 0;
     display: block;
     text-align: right;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     color: rgba(119, 126, 144, 1);
-    transition: color 0.3s ease-in-out;
-}
-
-.content__form_link:focus {
-    color: rgba(119, 126, 144, 1);
-}
-
-.content__form_link:hover {
-    color: rgb(46, 46, 46);
-}
-
-.content__form_link:active {
-    color: rgb(0, 0, 0);
 }
 
 .content__form_link-extra {
@@ -215,15 +206,15 @@ body {
 }
 
 .to-sign-up:focus {
-    color: rgb(127, 75, 49);
+    color: rgba(255, 150, 97, 1);
 }
 
 .to-sign-up:hover {
-    color: rgb(127, 75, 49);
+    color: rgba(0, 0, 0, 1);
 }
 
 .to-sign-up:active {
-    color: rgb(127, 75, 49);
+    color: rgba(255, 150, 97, 1);
 }
 
 .google-icon {
@@ -235,26 +226,30 @@ body {
 }
 
 .google-icon:focus{
-    fill: #ee631d;
+    fill: rgb(208, 77, 12);;
     outline-offset: 5px;
 }
 
 .google-icon:hover {
-    fill: #e87841;
+    fill: rgb(208, 77, 12);;
 }
 
 .google-icon:active {
-    fill: #ee631d;
+    fill: rgb(208, 77, 12);;
     outline: none;
 }
 
-.content__form-checkbox {
+.content__form_checkbox {
     margin-top: 7px;
 }
 
-.content__form-checkbox_input {
+.content__form_checkbox_input {
     margin: auto 0;
     margin-left: 10px;
+}
+
+#scales {
+    cursor: pointer;
 }
 
 .btn {
@@ -309,7 +304,7 @@ body {
     margin-left: 32px;
     width: 1px;
     height: 40px;
-    background-color: rgba(255, 229, 134, 1);
+    background-color: rgba(255, 237, 134, 1);
     display: inline-block;
 }
 
@@ -354,18 +349,18 @@ body {
 }
 
 .profile-avatar {
-    fill: #FFE586;
+    fill: rgba(255, 229, 134, 1);
     transition: fill 0.2s ease-in-out;
 }
 
 .profile-avatar:hover {
-    fill: #d1ac27;
+    fill: rgba(254, 200, 0, 1);
 }
 
 .header__line {
     margin: 0 auto;
     width: 99%;
-    border: 1px solid rgba(255, 229, 134, 1);
+    border: 1px solid rgba(255, 237, 134, 1);
 }
 
 /* main */
@@ -403,7 +398,7 @@ body {
 
 .cards__item {
     margin: 0;
-    outline: 2px solid rgba(255, 229, 134, 1);
+    outline: 2px solid rgba(255, 237, 173, 1);
     border-radius: 20px;
     width: 352px;
     min-height: 459px;
@@ -416,8 +411,16 @@ body {
 }
 
 .cards__item:hover {
-    outline: 2px solid rgb(205, 171, 48);
-    box-shadow: 0 0 25px rgba(255, 229, 134, 1);;
+    outline: 2px solid rgba(255, 222, 103, 1);
+    box-shadow: 0 0 25px rgba(255, 237, 173, 1);
+}
+
+.cards__item:focus {
+    outline: 2px solid rgba(255, 237, 173, 1);
+}
+
+.cards__item:active {
+    outline: 2px solid rgba(254, 200, 0, 1);
 }
 
 .cards__preview_content {
@@ -456,15 +459,15 @@ body {
 }
 
 .cards__btn:hover .message-btn {
-    fill: #FF9661;
+    fill: rgba(254, 200, 0, 1);
 }
 
 .cards__btn:hover .message-stroke {
-    stroke: #FF9661;
+    stroke: rgba(254, 200, 0, 1);
 }
 
 .cards__btn:hover {
-    fill: #FF9661;
+    fill: rgba(254, 200, 0, 1);
 }
 
 .message-btn {
@@ -517,17 +520,14 @@ body {
     outline: none;
     border-radius: 50%;
     transform: rotate(180deg);
-    /* transition: background-color 0.3s ease-in-out; */
     transition: outline 0.3s ease-in-out;
 }
 
 .cards__switch_left:hover {
-    /* background-color: rgba(177, 181, 195, 1); */
     outline: 1px solid rgba(177, 181, 195, 1);
 }
 
 .cards__switch_right:hover {
-    /* background-color: rgba(177, 181, 195, 1); */
     outline: 1px solid rgba(177, 181, 195, 1);
 }
 
@@ -572,7 +572,7 @@ body {
 }
 
 .directions__item_name:hover {
-    color: rgb(216, 87, 22);;
+    color: rgb(208, 77, 12);
 }
 
 /* questions */
@@ -627,8 +627,8 @@ body {
 }
 
 .questions__item:hover {
-    outline: 2px solid rgb(205, 171, 48);
-    box-shadow: 0 0 25px rgba(255, 229, 134, 1);
+    outline: 2px solid rgba(255, 222, 103, 1);
+    box-shadow: 0 0 25px rgba(255, 237, 173, 1);
 }
 
 .questions__item_question {
@@ -682,9 +682,13 @@ body {
     color: rgba(98, 98, 100, 1);
     background-color: rgb(243, 242, 242);
     border-radius: 15px;
-    box-shadow: 5px 3px 5px #d7d6d6;
+    box-shadow: 0 0 10px #d7d6d6;
     width: 500px;
     border: none;
+}
+
+.search__input:focus {
+    outline: 2px solid rgb(204, 204, 206);
 }
 
 .search__form {
@@ -713,8 +717,8 @@ input[type="checkbox"] {
 }
   
 input[type="checkbox"]:checked {
-    background-color: rgba(255, 229, 134, 1);
-    border-color: rgba(255, 229, 134, 1);
+    background-color: rgba(255, 237, 173, 1);
+    border-color: rgba(255, 237, 173, 1);
 }
 
 .filter {
@@ -871,7 +875,7 @@ input[type="checkbox"]:checked {
 .tutor_cards__item {
     margin: 0;
     margin-right: 32px;
-    outline: 1px solid rgba(255, 229, 134, 1);
+    outline: 1px solid rgba(255, 237, 173, 1);
     border-radius: 20px;
     width: 255px;
     min-height: 383px;
@@ -888,8 +892,8 @@ input[type="checkbox"]:checked {
 }
 
 .tutor_cards__item:hover {
-    outline: 2px solid rgb(205, 171, 48);
-    box-shadow: 0 0 25px rgba(255, 229, 134, 1);;
+    outline: 2px solid rgba(255, 222, 103, 1);
+    box-shadow: 0 0 25px rgba(255, 237, 173, 1);;
 }
 
 .tutor_cards__preview_content {
@@ -1134,7 +1138,7 @@ input[type="checkbox"]:checked {
     width: initial;
     height: initial;
     font-size: 3rem;
-    color: rgba(255, 229, 134, 1);
+    color: rgba(255, 237, 173, 1);
     display: none;
 }
 
@@ -1171,7 +1175,7 @@ input[type="checkbox"]:checked {
     width: initial;
     height: initial;
     font-size: 3rem;
-    color: rgba(255, 229, 134, 1);
+    color: rgba(255, 237, 173, 1);
     display: none;
 }
 

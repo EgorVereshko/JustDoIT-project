@@ -17,7 +17,7 @@
 <body>
     <header class="header">
         <div class="container header__container flex">
-            <a href="index.html"><img src="img/icon.svg" alt="" class="icon"></a>
+            <a href="index.html"><img src="img/icon.svg" alt="Лого" class="icon"></a>
             <div class="vertical-line"></div>
             <nav class="header__nav">
                 <ul class="header__nav_list list-reset flex">
@@ -39,58 +39,45 @@
     <main class="user">
         <div class="container user__container">
             <div class="user__content flex">
-                <!-- <img src="img/photo.png" alt="Аватар пользователя" class="user__image"> -->
                 <div class="user__avatar">
-                    <img id="displayImg" class="user__image" alt="Аватар">
+                    <img class="user__image" alt="Аватар" src="img/tutor_ava1.jpg">
                 </div>
                 <div class="user__input">
                     <div class="user__input_top flex">
-                        <h1 id="submittedName" class="user__name"></h1>
+                        <h1 class="user__name">Степашин Платон</h1>
                         <a href="#" class="message-text__btn"><img src="img/message-text.svg" alt=""></a>
                     </div>
                     <div class="user__form">
                         <p class="user__form_text">Информация</p>
                         <span class="user__form_title">Расскажи о себе</span>
-                        <p id="submittedText" class="user__form_data"></p>
+                        <p class="user__form_data">Руководитель отдела разработки. По вопросам управления людьми пишите</p>
                         <div class="flex">
                             <div class="user__form_input_left">
                                 <span class="user__form_title">Телефон</span>
-                                <p id="submittedPhone" class="user__form_data"></p>
+                                <p class="user__form_data">+79999999999</p>
                             </div>
                             <div class="user__form_input_right">
                                 <span class="user__form_title">email</span>
-                                <p id="submittedEmail" class="user__form_data"></p>
+                                <p class="user__form_data">platonstepashin@mail.ru</p>
                             </div>
                             
                         </div>
                         <span class="user__form_title">Род  деятельности</span>
                     </div>
-                    <div id="checkboxValues"></div>
+                    <div>
+                        <ul class="list-reset">
+                            <li>Аналитика</li>
+                            <li>Frontend</li>
+                            <li>Team-leader</li>
+                        </ul>
+                    </div>
                     <!-- <p class="user__input_timetable">Моё расписание</p> -->
-                    <button onclick="window.location.href='lk_edit.html'" class="btn btn-reset user__btn">Редактировать профиль</button>
                 </div>
             </div>
         </div>
     </main>
-
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const checkboxesParam = urlParams.get('checkboxValues');
-        const checkboxesArray = checkboxesParam.split(',');
     
-        const checkboxValuesDiv = document.getElementById('checkboxValues');
-        checkboxValuesDiv.innerHTML = "<ul>";
-        checkboxesArray.forEach(function(value) {
-            checkboxValuesDiv.innerHTML += "<li>" + value + "</li>";
-        });
-        checkboxValuesDiv.innerHTML += "</ul>";
-
-        const photoData = localStorage.getItem('photo');
-        const displayImg = document.getElementById('displayImg');
-        displayImg.src = photoData;
-    </script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/submit.js"></script>
 </body>
 </html>
