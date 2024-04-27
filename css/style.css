@@ -538,6 +538,8 @@ body {
 
 .directions__container {
     max-width: 667px;
+    display: flex;
+    justify-content: center;
 }
 
 .directions__item:not(:last-child) {
