@@ -1,5 +1,42 @@
-@media (max-width: 1120px) {
+@media (min-width: 1401px) {
     .container {
         max-width: 1000px;
+    }
+
+    .cards__preview_content {
+        padding: 30px 10px;
+    }
+
+    .cards__preview_image {
+        height: auto;
+    }
+
+    .cards__item {
+        min-height: 425px;
+    }
+
+    .questions__item {
+        min-height: 300px;
+    }
+
+    .questions__item_author {
+        padding: 0 15px;
+        padding-bottom: 30px;
+    }
+
+    .questions_block__name {
+        font-size: 20px;
+    }
+
+    .questions_block__descr {
+        font-size: 20px;
+    }
+
+    .questions_block__review {
+        margin-top: 85px;
+    }
+
+    .tutor_cards__container {
+        max-width: 1116px;
     }
 }
