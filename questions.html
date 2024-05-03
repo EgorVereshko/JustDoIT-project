@@ -35,7 +35,164 @@
         </div>
     </header>
     <hr class="header__line">
-    
+
+    <section id="search" class="search">
+        <div class="container search__container flex">
+            <form action="#" class="search__form">
+                <input type="text" placeholder="Поиск" class="search__input">
+            </form>
+
+            <button class="filter" id="myBtn"><img src="img/filter.svg"></button>
+            <div id="popup" class="popup">
+                <div class="popup__content">
+                    <div class="popup__header">
+                        <h3 class="popup__header">ФИЛЬТР</h3>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="popup__body">
+                        <ul class="popup__list list-reset">
+                            <li class="popup__item flex">
+                                <input id="scales" type="checkbox" class="filter__checkbox">
+                                <p class="filter__name">Аналитика</p>
+                                <span class="filter__count">96</span>
+                            </li>
+                            <li class="popup__item flex">
+                                <input id="scales" type="checkbox" class="filter__checkbox">
+                                <p class="filter__name">Дизайн</p>
+                                <span class="filter__count">71</span>
+                            </li>
+                            <li class="popup__item flex">
+                                <input id="scales" type="checkbox" class="filter__checkbox">
+                                <p class="filter__name">Frontend</p>
+                                <span class="filter__count">55</span>
+                            </li>
+                            <li class="popup__item flex">
+                                <input id="scales" type="checkbox" class="filter__checkbox">
+                                <p class="filter__name">Backend</p>
+                                <span class="filter__count">54</span>
+                            </li>
+                            <li class="popup__item flex">
+                                <input id="scales" type="checkbox" class="filter__checkbox">
+                                <p class="filter__name">Team-leader</p>
+                                <span class="filter__count">49</span>
+                            </li>
+                        </ul>
+                        <hr class="popup__line">
+                        <span class="popup__text">Найдено 126 карточек</span>
+                        <button class="btn btn-reset popup__btn">Применить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="questions_list" class="questions_list">
+        <div class="container questions_list__container">
+            <div class="questions_list__write">
+                <h3 class="questions_list__write_title">Задай свой вопрос</h3>
+                <div class="questions_list__write_form flex">
+                    <input type="text" placeholder="Опиши свою проблему. Кто-нибудь обязательно поможет" class="questions_list__write_input">
+                    <button class="btn btn-reset questions_list__write_btn">Опубликовать!</button>
+                </div>
+            </div>
+
+            <div class="questions_block">
+                <p class="questions_block__name">Малинин Илья</p>
+                <p class="questions_block__descr">Помогите разобрать как добавить подзадачи в Битрикс 24</p>
+                <div class="questions_block__review flex">
+                    <svg class="questions_block__review_like" width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.0003 44.4792L21.9795 41.7292C11.2503 32 4.16699 25.5833 4.16699 17.7083C4.16699 11.2917 9.20866 6.25 15.6253 6.25C19.2503 6.25 22.7295 7.9375 25.0003 10.6042C27.2712 7.9375 30.7503 6.25 34.3753 6.25C40.792 6.25 45.8337 11.2917 45.8337 17.7083C45.8337 25.5833 38.7503 32 28.0212 41.75L25.0003 44.4792Z"/>
+                    </svg>
+                    <div class="questions_block__review_comment"> 
+                        <span class="comment-text">Комментарии</span>
+                        <ul class="comment__list list-reset hidden"> 
+                            <h3 class="comment__list_title">2 комментария</h3>
+                            <li class="comment__item flex">
+                                <img src="img/authorava.jpg" class="comment__item_avatar" alt="Аватар">
+                                <div class="comment__item_content">
+                                    <p class="comment__item_name">Булаткин Егор</p>
+                                    <p class="comment__item_descr">Легко, просто сделай так, а потом так</p>
+                                    <p class="comment__item_like">Like</p>
+                                </div>
+                            </li> 
+
+                            <li class="comment__item flex">
+                                <img src="img/authorava.jpg" class="comment__item_avatar" alt="Аватар">
+                                <div class="comment__item_content">
+                                    <p class="comment__item_name">Никитин Артём</p>
+                                    <p class="comment__item_descr">Пишешь class и готово</p>
+                                    <p class="comment__item_like">Like</p>
+                                </div>
+                            </li>
+
+                            <div class="questions_list__write_form flex">
+                                <input type="text" placeholder="Опубликуй свой ответ" class="questions_list__write_input">
+                                <button class="btn btn-reset questions_list__write_btn">Опубликовать!</button>
+                            </div>
+                        </ul> 
+                      </div>
+                </div>
+            </div>
+
+            <div class="questions_block">
+                <p class="questions_block__name">Щербакова Анна</p>
+                <p class="questions_block__descr">Как сделать отдельные классы в C#?</p>
+                <div class="questions_block__review flex">
+                    <svg class="questions_block__review_like" width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.0003 44.4792L21.9795 41.7292C11.2503 32 4.16699 25.5833 4.16699 17.7083C4.16699 11.2917 9.20866 6.25 15.6253 6.25C19.2503 6.25 22.7295 7.9375 25.0003 10.6042C27.2712 7.9375 30.7503 6.25 34.3753 6.25C40.792 6.25 45.8337 11.2917 45.8337 17.7083C45.8337 25.5833 38.7503 32 28.0212 41.75L25.0003 44.4792Z"/>
+                    </svg>
+                    <p class="questions_block__review_comment">Комментарии</p>
+                </div>
+            </div>
+
+            <div class="questions_block">
+                <p class="questions_block__name">Игнатов Макар</p>
+                <p class="questions_block__descr">Задача по питону. Вам дан массив, состоящий из чисел от одного до 2 * 10^6. Найдите для него K порядковую статистику</p>
+                <div class="questions_block__review flex">
+                    <svg class="questions_block__review_like" width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.0003 44.4792L21.9795 41.7292C11.2503 32 4.16699 25.5833 4.16699 17.7083C4.16699 11.2917 9.20866 6.25 15.6253 6.25C19.2503 6.25 22.7295 7.9375 25.0003 10.6042C27.2712 7.9375 30.7503 6.25 34.3753 6.25C40.792 6.25 45.8337 11.2917 45.8337 17.7083C45.8337 25.5833 38.7503 32 28.0212 41.75L25.0003 44.4792Z"/>
+                    </svg>
+                    <p class="questions_block__review_comment">Комментарии</p>
+                </div>
+            </div>
+
+            <div class="questions_block">
+                <p class="questions_block__name">Лазарев Лев</p>
+                <p class="questions_block__descr">Что такое бинарный поиск. Пример можно?</p>
+                <div class="questions_block__review flex">
+                    <svg class="questions_block__review_like" width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.0003 44.4792L21.9795 41.7292C11.2503 32 4.16699 25.5833 4.16699 17.7083C4.16699 11.2917 9.20866 6.25 15.6253 6.25C19.2503 6.25 22.7295 7.9375 25.0003 10.6042C27.2712 7.9375 30.7503 6.25 34.3753 6.25C40.792 6.25 45.8337 11.2917 45.8337 17.7083C45.8337 25.5833 38.7503 32 28.0212 41.75L25.0003 44.4792Z"/>
+                    </svg>
+                    <p class="questions_block__review_comment">Комментарии</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button class="btn btn-reset questions_btn">Показать ещё</button>
+    <script>
+        const like = document.querySelectorAll('.questions_block__review_like');
+        like.forEach((element) => {
+            element.addEventListener('click', () => {
+                if (element.getAttribute('fill') === 'rgba(255, 113, 99, 1)') {
+                    element.setAttribute('fill', '#CAD1E1');
+                } else {
+                    element.setAttribute('fill', 'rgba(255, 113, 99, 1)');
+                }
+            });
+            element.setAttribute('fill', '#CAD1E1');
+        });
+
+        var options = document.querySelector('.questions_block__review_comment .hidden');
+        var triggerElement = document.querySelector('.comment-text');
+
+        triggerElement.addEventListener('click', function(event) {
+            if (options.style.display === 'none' || options.style.display === '') {
+                options.style.display = 'block';
+            } else {
+                options.style.display = 'none';
+            }
+        });
+    </script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
