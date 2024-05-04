@@ -1371,7 +1371,6 @@ input[type="checkbox"]:checked {
     color: rgba(254, 200, 0, 1);
 }
 
-
 .swiper-questions-button-prev {
     left: 0;
     margin-left: 100px;
@@ -1395,3 +1394,9 @@ input[type="checkbox"]:checked {
 .swiper-pagination-bullet-active {
     background-color: rgba(20, 20, 22, 1);
 } */
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+}

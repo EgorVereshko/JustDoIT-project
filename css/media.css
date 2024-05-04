@@ -93,24 +93,11 @@
         margin-top: 125px;
     }
 
-    .swiper-questions-button-prev,
-    .swiper-questions-button-next {
-        width: initial;
-        height: initial;
-        font-size: 3rem;
-        color: rgba(255, 237, 173, 1);
-        cursor: pointer;
-        position: absolute;
-        margin-top: -250px;
-    }
-
     .swiper-questions-button-prev {
-        left: 0;
         margin-left: 200px;
     }
 
     .swiper-questions-button-next {
-        right: 0;
         margin-right: 200px;
     }
 
