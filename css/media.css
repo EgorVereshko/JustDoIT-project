@@ -25,11 +25,15 @@
     }
 
     .questions_block__name {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .questions_block__descr {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .questions_block__review_comment {
+        font-size: 18px;
     }
 
     .questions_block__review {
@@ -38,5 +42,83 @@
 
     .tutor_cards__container {
         max-width: 1116px;
+    }
+
+    .content__left {
+        padding: 50px;
+    }
+
+    .content__right {
+        padding: 80px 0 20px 125px;
+    }
+
+    .content__left_title {
+        font-size: 35px;
+    }
+
+    .content__left_descr {
+        font-size: 17px;
+    }
+
+    .content__form_input {
+        margin-bottom: 15px;
+    }
+    
+    .registration-content__form_link {
+        margin-bottom: 30px;
+    }
+
+    .content__right_title {
+        font-size: 25px;
+    }
+
+    .content__form_link-extra {
+        margin-top: 20px;
+    }
+
+    .google-icon {
+        margin-top: 15px;
+    }
+
+    .swiper-button-prev {
+        margin-left: 200px;
+    }
+    
+    .swiper-button-next {
+        margin-right: 200px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        margin-top: 125px;
+    }
+
+    .swiper-questions-button-prev,
+    .swiper-questions-button-next {
+        width: initial;
+        height: initial;
+        font-size: 3rem;
+        color: rgba(255, 237, 173, 1);
+        cursor: pointer;
+        position: absolute;
+        margin-top: -250px;
+    }
+
+    .swiper-questions-button-prev {
+        left: 0;
+        margin-left: 200px;
+    }
+
+    .swiper-questions-button-next {
+        right: 0;
+        margin-right: 200px;
+    }
+
+    .questions_list__write_title {
+        font-size: 20px;
+    }
+
+    .questions_list__write_form {
+        width: 900px;
     }
 }
