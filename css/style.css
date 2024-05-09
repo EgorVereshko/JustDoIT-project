@@ -983,7 +983,7 @@ input[type="checkbox"]:checked {
 
 /* questions_list */
 .questions_list {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .questions_list__write_title {
@@ -1028,6 +1028,7 @@ input[type="checkbox"]:checked {
 
 .questions_block {
     margin-top: 100px;
+    position: relative;
 }
 
 .questions_block:not(:last-child) {
@@ -1038,10 +1039,27 @@ input[type="checkbox"]:checked {
     margin-bottom: 50px;
 }
 
+.questions_block__datatime {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    color: rgba(119, 126, 144, 1);
+}
+
+.questions_block__avatar {
+    margin: auto 0;
+    width: 65px;
+    height: 65px;
+}
+
+.questions_block__title {
+    margin-left: 20px;
+}
+
 .questions_block__name {
     margin: 0;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     color: rgba(54, 57, 64, 1);
 }
@@ -1051,7 +1069,8 @@ input[type="checkbox"]:checked {
     margin-top: 20px;
     font-weight: 400;
     font-size: 24px;
-    line-height: 22px;
+    line-height: 25px;
+    width: 900px;
     color: rgba(54, 57, 64, 1);
 }
 
@@ -1059,8 +1078,12 @@ input[type="checkbox"]:checked {
     margin-top: 110px;
 }
 
-.questions_block__review_like {
+.questions_block__review_like_image {
     cursor: pointer;
+}
+
+.questions_block__review_like_count {
+    margin-left: 10px;
 }
 
 .questions_block__review_comment {
@@ -1072,6 +1095,12 @@ input[type="checkbox"]:checked {
     color: rgba(0, 0, 0, 1);
 }
 
+.questions_block__review_comment_count {
+    margin: auto 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .questions_btn {
     display: block;
     margin: 0 auto; 
@@ -1081,6 +1110,7 @@ input[type="checkbox"]:checked {
 
 .comment-text {
     display: block;
+    margin-left: auto;
     text-align: right;
     color: rgba(0, 0, 0, 1);
     cursor: pointer;
@@ -1116,6 +1146,7 @@ input[type="checkbox"]:checked {
 
 .comment__item {
     width: 925px;
+    position: relative;
 }
 
 .comment__item:not(:last-child) {
@@ -1124,6 +1155,15 @@ input[type="checkbox"]:checked {
 
 .comment__item:last-child {
     margin-bottom: 32px;
+}
+
+.comment__item__datatime {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(119, 126, 144, 1);
 }
 
 .comment__item_avatar {

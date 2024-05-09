@@ -29,7 +29,8 @@
     }
 
     .questions_block__descr {
-        font-size: 18px;
+        font-size: 20px;
+        width: 800px;
     }
 
     .questions_block__review_comment {
