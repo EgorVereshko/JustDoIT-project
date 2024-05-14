@@ -230,15 +230,17 @@
             element.setAttribute('fill', '#CAD1E1');
         });
 
-        var options = document.querySelector('.questions_block__review_comment .hidden');
-        var triggerElement = document.querySelector('.comment-text');
+        var options = document.querySelectorAll('.questions_block__review_comment .hidden');
+        var triggerElements = document.querySelectorAll('.comment-text');
 
-        triggerElement.addEventListener('click', function(event) {
-            if (options.style.display === 'none' || options.style.display === '') {
-                options.style.display = 'block';
-            } else {
-                options.style.display = 'none';
-            }
+        triggerElements.forEach(function(triggerElement, index) {
+            triggerElement.addEventListener('click', function(event) {
+                if (options[index].style.display === 'none' || options[index].style.display === '') {
+                    options[index].style.display = 'block';
+                } else {
+                    options[index].style.display = 'none';
+                }
+            });
         });
     </script>
     <script src="./js/swiper-bundle.min.js"></script>
