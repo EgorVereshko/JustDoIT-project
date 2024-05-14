@@ -327,6 +327,7 @@ body {
 
 .header__nav_item:focus {
     color: rgb(53, 54, 58);
+    outline: none;
 }
 
 .header__nav_item:hover {
@@ -932,14 +933,16 @@ input[type="checkbox"]:checked {
     width: 322px;
 }
 
-.message-text__btn {
-    display: none;
+.notice-btn {
     margin: auto 0 auto auto;
-    width: 46px;
-    height: 46px;
-    padding: 12px 11px 11px 12px;
-    background-color: rgba(255, 150, 97, 1);
     border-radius: 50%;
+    fill: #FF9661;
+    cursor: pointer;
+    transition: fill 0.2s ease-in-out;
+}
+
+.notice-btn:hover {
+    fill: rgb(208, 77, 12);;
 }
 
 .card {
@@ -1200,6 +1203,99 @@ input[type="checkbox"]:checked {
     line-height: 20px;
     color: rgba(255, 199, 198, 1);
     cursor: pointer;
+}
+
+/* notices */
+.notices__container {
+    max-width: 925px;
+}
+
+.notices__title {
+    margin: 0;
+    margin-top: 100px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(35, 38, 47, 1);
+    text-align: center;
+}
+
+.notices__item {
+    margin-top: 32px;
+    padding: 20px;
+}
+
+.notices__item_avatar {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.notices__item_content {
+    margin-left: 20px;
+}
+
+.notices__item__name {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(20, 20, 22, 1);
+}
+
+.notices__item__descr {
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(20, 20, 22, 1);
+    width: 900px;
+}
+
+.notices__item_btns {
+    margin: 0;
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.notices__item_btns-accept {
+    color: rgba(195, 238, 179, 1);
+    transition: color 0.2s ease-in-out;
+}
+
+.notices__item_btns-accept:focus {
+    color: rgb(37, 84, 20);
+    outline: none;
+}
+
+.notices__item_btns-accept:hover {
+    color: rgb(100, 228, 54);
+}
+
+.notices__item_btns-accept:active {
+    color: rgb(37, 84, 20);
+}
+
+.notices__item_btns-reject {
+    margin-left: 15px;
+    color: rgba(255, 165, 164, 1);
+    transition: color 0.2s ease-in-out;
+}
+
+.notices__item_btns-reject:focus {
+    color: rgb(122, 37, 35);
+    outline: none;
+}
+
+.notices__item_btns-reject:hover {
+    color: rgb(216, 68, 65);
+}
+
+.notices__item_btns-reject:active {
+    color: rgb(122, 37, 35);
 }
 
 /* user */
