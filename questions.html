@@ -145,7 +145,7 @@
                                 <button class="btn btn-reset questions_list__write_btn">Опубликовать!</button>
                             </div>
                         </ul> 
-                      </div>
+                    </div>
                 </div>
             </div>
             <hr class="header__line">
@@ -234,14 +234,33 @@
         var triggerElements = document.querySelectorAll('.comment-text');
 
         triggerElements.forEach(function(triggerElement, index) {
+            var storageKey = 'block_' + index;
+            
+            if (localStorage.getItem(storageKey) === 'open') {
+                options[index].style.display = 'block';
+            } else {
+                options[index].style.display = 'none';
+            }
+            
             triggerElement.addEventListener('click', function(event) {
                 if (options[index].style.display === 'none' || options[index].style.display === '') {
                     options[index].style.display = 'block';
+                    localStorage.setItem(storageKey, 'open');
                 } else {
                     options[index].style.display = 'none';
+                    localStorage.removeItem(storageKey);
                 }
             });
         });
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function (e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
     </script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
