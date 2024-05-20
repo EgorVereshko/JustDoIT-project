@@ -363,6 +363,12 @@ body {
 }
 
 /* main */
+.body__line {
+    margin: 0 auto;
+    width: 99%;
+    border: 1px solid rgba(230, 232, 236, 1);
+}
+
 .cards {
     margin-top: 80px;
 }
@@ -424,7 +430,7 @@ body {
 
 .cards__preview_content {
     margin: 0;
-    padding: 30px 27px;
+    padding: 30px 40px;
 }
 
 .cards__preview_name {
@@ -1208,6 +1214,7 @@ input[type="checkbox"]:checked {
 /* notices */
 .notices__container {
     max-width: 925px;
+    margin-bottom: 100px;
 }
 
 .notices__title {
@@ -1233,9 +1240,11 @@ input[type="checkbox"]:checked {
 
 .notices__item_content {
     margin-left: 20px;
+    width: 50%;
 }
 
 .notices__item__name {
+    display: inline;
     margin: 0;
     font-weight: 500;
     font-size: 14px;
@@ -1250,7 +1259,6 @@ input[type="checkbox"]:checked {
     font-size: 14px;
     line-height: 24px;
     color: rgba(20, 20, 22, 1);
-    width: 900px;
 }
 
 .notices__item_btns {
@@ -1296,6 +1304,98 @@ input[type="checkbox"]:checked {
 
 .notices__item_btns-reject:active {
     color: rgb(122, 37, 35);
+}
+
+.notices__form {
+    margin-left: auto;
+    width: 358px;
+}
+
+.notices__input {
+    padding: 12px 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(119, 126, 144, 1);
+    background-color: rgb(243, 242, 242);
+    border-radius: 12px;
+    box-shadow: 0 0 10px #d7d6d6;
+    width: 100%;
+    border: none;
+}
+
+.notices__input:focus {
+    outline: 2px solid rgba(119, 126, 144, 1);
+}
+
+.notices__form_btn {
+    margin: 0;
+    margin-top: 16px;
+    padding: 0 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(119, 126, 144, 1);
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    background-color: #fff;
+    outline: 2px solid rgba(255, 229, 134, 1);
+    transition: outline 0.3s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.notices__form_btn:focus {
+    background-color: rgba(255, 229, 134, 1);
+    outline: 2px solid rgba(254, 200, 0, 1);
+}
+
+.notices__form_btn:hover {
+    outline: 2px solid rgba(254, 200, 0, 1);
+}
+
+.notices__form_btn:active {
+    background-color: rgba(255, 229, 134, 1);
+    outline: 2px solid rgba(254, 200, 0, 1);
+}
+
+.notices__status_accepted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 12px;
+    width: 150px;
+    color: rgba(195, 238, 179, 1);
+    outline: 2px solid rgba(195, 238, 179, 1);
+}
+
+.notices__status_rejected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 12px;
+    width: 150px;
+    color: rgba(255, 165, 164, 1);
+    outline: 2px solid rgba(255, 165, 164, 1);
+}
+
+.notices__status_reviewed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 12px;
+    width: 150px;
+    color: rgba(255, 229, 134, 1);
+    outline: 2px solid rgba(255, 229, 134, 1);
 }
 
 /* user */
@@ -1413,16 +1513,103 @@ input[type="checkbox"]:checked {
     border: none;
 }
 
-.user__input_timetable {
+.user__input_timetable-title {
     margin: 0;
+    margin-top: 48px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: rgba(35, 38, 47, 1);
 }
 
+.user__input_timetable {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(246, 246, 246, 1);
+    border-collapse: collapse;
+}
+
+.timetable__head_cell {
+    width: 92px;
+    height: 43px;
+    border: 1px solid rgba(255, 229, 134, 1);
+    text-align: center;
+}
+
+.timetable__body_cell-time {
+    width: 90px;
+    height: 30px;
+    border: 1px solid rgba(255, 229, 134, 1);
+    text-align: center;
+}
+
+.timetable__body_cell {
+    width: 90px;
+    height: 30px;
+    border: 1px solid rgba(255, 229, 134, 1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.timetable__body_cell:hover {
+    outline: 2px solid rgba(79, 153, 52, 1);
+}
+
+.cell_highlighted {
+    background-color: rgba(195, 238, 179, 1);
+}
+
+.timetable_text {
+    margin: 0;
+    margin-bottom: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(35, 38, 47, 1);
+}
+
+.user__input_timetable-bottom {
+    margin-bottom: 100px;
+    display: none;
+}
+
+.user__input_timetable-btn {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.user__input_timetable-input {
+    margin: auto 0;
+    margin-left: 40px;
+    padding: 12px 16px;
+    width: 358px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(119, 126, 144, 1);
+    background-color: rgb(243, 242, 242);
+    border-radius: 12px;
+    box-shadow: 0 0 10px #d7d6d6;
+    border: none;
+}
+
+.user__input_timetable-input:focus {
+    outline: 2px solid rgba(119, 126, 144, 1);
+}
+
 .user__btn {
-    margin-top: 100px;
     width: 256px;
 }
 
