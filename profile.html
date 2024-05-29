@@ -178,15 +178,26 @@
                 hiddenBlock.style.display = 'flex';
                 timetableText.style.display = 'none';
 
-                document.querySelectorAll('.timetable__body_cell').forEach(cell =>
-                    cell.classList.remove('cell_highlighted')
-                )
+                // document.querySelectorAll('.timetable__body_cell').forEach(cell =>
+                //     cell.classList.remove('cell_highlighted')
+                // )
 
-                if (td.classList.contains('cell_highlighted')) {
-                    td.classList.remove('cell_highlighted');
-                } else {
-                    td.classList.add('cell_highlighted');
-                }
+                // if (td.classList.contains('cell_highlighted')) {
+                //     td.classList.remove('cell_highlighted');
+                // } else {
+                //     td.classList.add('cell_highlighted');
+                // }
+            });
+        });
+
+        const checkboxes = document.querySelectorAll('.timetable__body_cell input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                checkboxes.forEach(cb => {
+                    if (cb !== checkbox) {
+                        cb.checked = false;
+                    }
+                });
             });
         });
     </script>
