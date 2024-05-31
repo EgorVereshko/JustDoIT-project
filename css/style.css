@@ -1202,13 +1202,10 @@ input[type="checkbox"]:checked {
     color: rgba(53, 57, 69, 1);
 }
 
-.comment__item_like {
-    margin: 0;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 20px;
-    color: rgba(255, 199, 198, 1);
-    cursor: pointer;
+.comment__like_count {
+    margin: auto 0;
+    margin-left: 10px;
+    font-weight: normal;
 }
 
 /* notices */
