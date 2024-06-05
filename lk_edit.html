@@ -17,7 +17,7 @@
 <body>
     <header class="header">
         <div class="container header__container flex">
-            <a href="index.html"><img src="img/icon.svg" alt="Лого" class="icon"></a>
+            <a href="index.html"><img src="img/icon.png" alt="Лого" class="icon"></a>
             <div class="vertical-line"></div>
             <nav class="header__nav">
                 <ul class="header__nav_list list-reset flex">
@@ -187,27 +187,27 @@
         </div>
     </main>
 
-    <script>
-        const photoData = localStorage.getItem('photo');
-        const displayImg = document.getElementById('displayImg');
-        displayImg.src = photoData;
+<script>
+    const photoData = localStorage.getItem('photo');
+    const displayImg = document.getElementById('displayImg');
+    displayImg.src = photoData;
 
-        document.querySelectorAll('.timetable__body_cell').forEach(td => {
-            td.addEventListener('click', () => {
-                const hiddenBlock = document.getElementById('timetable_bottom');
-                const timetableText = document.getElementById('timetable_text');
-                hiddenBlock.style.display = 'flex';
-                timetableText.style.display = 'none';
-                if (td.classList.contains('cell_highlighted')) {
-                    td.classList.remove('cell_highlighted');
-                } else {
-                    td.classList.add('cell_highlighted');
-                }
-            });
+    document.querySelectorAll('.timetable__body_cell').forEach(td => {
+        td.addEventListener('click', () => {
+            const hiddenBlock = document.getElementById('timetable_bottom');
+            const timetableText = document.getElementById('timetable_text');
+            hiddenBlock.style.display = 'flex';
+            timetableText.style.display = 'none';
+            if (td.classList.contains('cell_highlighted')) {
+                td.classList.remove('cell_highlighted');
+            } else {
+                td.classList.add('cell_highlighted');
+            }
         });
-    </script>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/script.js"></script>
+    });
+</script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
