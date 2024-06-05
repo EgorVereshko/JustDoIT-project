@@ -310,6 +310,8 @@ body {
     padding: 4px 13px;
     background-color: #fff;
     border-radius: 90px;
+    width: 80px;
+    height: 40px;
 }
 
 .header__nav {
